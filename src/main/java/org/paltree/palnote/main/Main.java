@@ -8,24 +8,17 @@
  *
  * Created by snvx on 14/09/24.
  */
-package org.palnote.main;
+package org.paltree.palnote.main;
 
 import javafx.application.Application;
-import javafx.geometry.HPos;
-import javafx.geometry.Insets;
-import javafx.geometry.Pos;
 import javafx.scene.Scene;
-import javafx.scene.layout.AnchorPane;
-import javafx.scene.layout.ColumnConstraints;
-import javafx.scene.layout.GridPane;
+import javafx.scene.layout.HBox;
 import javafx.stage.Stage;
-
-import java.util.stream.IntStream;
 
 public class Main extends Application {
     @Override
     public void start(Stage stage) {
-        AnchorPane root = new AnchorPane();
+        HBox root = new HBox();
         Scene scene = new Scene(root, 800, 600);
 
         stage.setTitle("PaLNote");
