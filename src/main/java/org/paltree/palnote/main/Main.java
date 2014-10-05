@@ -16,7 +16,6 @@ import javafx.scene.layout.HBox;
 import javafx.stage.Stage;
 
 public class Main extends Application {
-    @Override
     public void start(Stage stage) {
         HBox root = new HBox();
         Scene scene = new Scene(root, 800, 600);
