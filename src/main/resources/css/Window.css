@@ -1,0 +1,61 @@
+.tab {
+    -fx-background-color: #bbbbbb;
+    -fx-background-radius: 1px;
+}
+
+.tab:selected {
+    -fx-background-color: #555555;
+}
+
+.tab:selected .tab-label {
+    -fx-text-fill: #ecf0f1;
+}
+
+.tab-pane {
+    -fx-background-color: #323232;
+}
+
+.button {
+    -fx-background-color: #7f8c8d;
+    -fx-text-fill: #ecf0f1;
+    -fx-background-radius: 1px;
+}
+
+.button .text {
+    -fx-font-weight:bold;
+    -fx-font-size:11px;
+}
+
+.button:hover {
+    -fx-background-color: #6e7b7c;
+}
+
+.button:pressed {
+    -fx-background-color: #5d6a6b;
+}
+
+.root-toolbar{
+    -fx-background-color: #323232;
+}
+
+.TextArea {
+    -fx-text-fill: #ecf0f1;
+    -fx-background-color: #555555;
+    -fx-background-radius: 0px;
+}
+
+.TextArea .scroll-pane {
+    -fx-background-color: transparent;
+}
+
+.TextArea .scroll-pane .viewport {
+    -fx-background-color: transparent;
+}
+
+.TextArea .scroll-pane .content {
+    -fx-background-color: transparent;
+}
+
+#footer {
+    -fx-background-color: #555555;
+}
