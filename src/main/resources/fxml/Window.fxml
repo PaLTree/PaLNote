@@ -1,14 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
 <?import javafx.scene.control.*?>
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="497.0" prefWidth="725.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="547.0" prefWidth="779.0" stylesheets="@../css/Window.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.paltree.palnote.view.controller.MainWindowController">
    <children>
-      <MenuBar>
+      <MenuBar useSystemMenuBar="true">
         <menus>
+            <Menu mnemonicParsing="false" text="PaLNote">
+              <items>
+                  <MenuItem mnemonicParsing="false" text="About PaLNote" />
+                <MenuItem mnemonicParsing="false" text="Check for Updates" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" text="Preferences..." />
+              </items>
+            </Menu>
           <Menu mnemonicParsing="false" text="File">
             <items>
               <MenuItem mnemonicParsing="false" text="Close" />
@@ -29,6 +39,12 @@
       <ToolBar prefHeight="23.0" prefWidth="725.0">
         <items>
           <Button mnemonicParsing="false" text="Button" />
+            <MenuButton mnemonicParsing="false" text="MenuButton">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+                <MenuItem mnemonicParsing="false" text="Action 2" />
+              </items>
+            </MenuButton>
         </items>
          <contextMenu>
             <ContextMenu>
@@ -38,23 +54,59 @@
             </ContextMenu>
          </contextMenu>
       </ToolBar>
-      <TabPane prefHeight="406.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" VBox.vgrow="ALWAYS">
-        <tabs>
-          <Tab text="sample.np">
-            <content>
-              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="323.0" prefWidth="600.0">
-                     <children>
-                        <TextArea prefHeight="332.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
-                     </children>
-                  </AnchorPane>
-            </content>
-          </Tab>
-          <Tab text="Untitled Tab 2">
-            <content>
-              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
-            </content>
-          </Tab>
-        </tabs>
-      </TabPane>
+      <HBox prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+         <children>
+            <TabPane prefHeight="406.0" prefWidth="600.0" style="-fx-background-radius: 0;" tabClosingPolicy="UNAVAILABLE" HBox.hgrow="ALWAYS">
+              <tabs>
+                <Tab text="sample.np">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="323.0" prefWidth="600.0">
+                           <children>
+                              <TextArea layoutX="-137.0" layoutY="115.0" prefHeight="332.0" prefWidth="600.0" styleClass="TextArea" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                           </children>
+                        </AnchorPane>
+                  </content>
+                     <graphic>
+                        <ImageView fitHeight="31.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/default-128.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                </Tab>
+                <Tab text="sample2.cpp">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <TextArea layoutX="37.0" layoutY="390.0" prefHeight="200.0" prefWidth="200.0" styleClass="TextArea" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                           </children></AnchorPane>
+                  </content>
+                     <graphic>
+                        <ImageView fitHeight="29.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/default-128.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                </Tab>
+                  <Tab text="+">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                    </content>
+                  </Tab>
+              </tabs>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </TabPane>
+         </children>
+      </HBox>
+      <AnchorPane id="footer" prefHeight="0.0" prefWidth="451.0">
+         <children>
+            <Label layoutX="406.0" text="UTF-8" AnchorPane.rightAnchor="3.0" />
+            <Label layoutX="395.0" text="|" AnchorPane.rightAnchor="46.0" />
+            <Label layoutX="370.0" text="1:1" AnchorPane.rightAnchor="51.0" />
+         </children>
+      </AnchorPane>
    </children>
 </VBox>
