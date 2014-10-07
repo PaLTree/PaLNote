@@ -59,3 +59,7 @@
 #footer {
     -fx-background-color: #555555;
 }
+
+.Label {
+    -fx-text-fill: #ecf0f1;
+}
