@@ -10,5 +10,19 @@
  */
 package org.paltree.palnote.view.controller;
 
+import javafx.application.Platform;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.scene.control.MenuItem;
+
 public class MainWindowController {
+    @FXML private MenuItem about_app;
+    @FXML private MenuItem check_updates;
+    @FXML private MenuItem preferences;
+    @FXML private MenuItem quit_application;
+
+    @FXML
+    public void onQuitApplication (ActionEvent event) {
+        Platform.exit();
+    }
 }
