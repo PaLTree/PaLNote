@@ -13,10 +13,12 @@
         <menus>
             <Menu mnemonicParsing="false" text="PaLNote">
               <items>
-                  <MenuItem mnemonicParsing="false" text="About PaLNote" />
-                <MenuItem mnemonicParsing="false" text="Check for Updates" />
+                  <MenuItem fx:id="about_app" onAction="#onAboutApp" mnemonicParsing="false" text="About PaLNote" />
+                <MenuItem fx:id="check_updates" mnemonicParsing="false" text="Check for Updates" />
                   <SeparatorMenuItem mnemonicParsing="false" />
-                  <MenuItem mnemonicParsing="false" text="Preferences..." />
+                  <MenuItem fx:id="preferences" onAction="#onPreferences" mnemonicParsing="false" text="Preferences..." />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem fx:id="quit_application" onAction="#onQuitApplication" mnemonicParsing="false" text="QuitApplication" />
               </items>
             </Menu>
           <Menu mnemonicParsing="false" text="File">
