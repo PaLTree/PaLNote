@@ -20,10 +20,9 @@ import javafx.stage.Modality;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
-public class AboutApp extends Stage {
+public class AboutAppWindow extends Stage {
 
-    public AboutApp(Stage owner) {
-        initOwner(owner);
+    public AboutAppWindow() {
         initModality(Modality.APPLICATION_MODAL);
         initStyle(StageStyle.UTILITY);
         setTitle("About PaLNote");

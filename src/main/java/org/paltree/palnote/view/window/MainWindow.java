@@ -13,6 +13,6 @@ package org.paltree.palnote.view.window;
 /**
  * MainWindowClass
  */
-public class Window {
+public class MainWindow {
 
 }
