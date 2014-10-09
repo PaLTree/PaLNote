@@ -14,7 +14,7 @@
             <Menu mnemonicParsing="false" text="PaLNote">
               <items>
                   <MenuItem fx:id="about_app" onAction="#onAboutApp" mnemonicParsing="false" text="About PaLNote" />
-                <MenuItem fx:id="check_updates" mnemonicParsing="false" text="Check for Updates" />
+                <MenuItem fx:id="check_updates" onAction="#onCheckUpdate" mnemonicParsing="false" text="Check for Updates" />
                   <SeparatorMenuItem mnemonicParsing="false" />
                   <MenuItem fx:id="preferences" onAction="#onPreferences" mnemonicParsing="false" text="Preferences..." />
                   <SeparatorMenuItem mnemonicParsing="false" />

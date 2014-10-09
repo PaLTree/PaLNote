@@ -38,6 +38,11 @@ public class MainWindowController {
     }
 
     @FXML
+    public void onCheckUpdate (ActionEvent event) {
+
+    }
+
+    @FXML
     public void onQuitApplication (ActionEvent event) {
         Platform.exit();
     }
