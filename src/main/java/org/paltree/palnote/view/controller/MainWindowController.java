@@ -16,7 +16,8 @@ import javafx.fxml.FXML;
 import javafx.scene.control.MenuItem;
 import javafx.stage.Stage;
 
-import org.paltree.palnote.view.AboutApp;
+import org.paltree.palnote.view.window.AboutAppWindow;
+import org.paltree.palnote.view.window.PreferenceWindow;
 
 public class MainWindowController {
     @FXML private MenuItem about_app;
@@ -26,13 +27,14 @@ public class MainWindowController {
 
     @FXML
     public void onAboutApp (ActionEvent event) {
-        Stage aboutStage = new AboutApp(stage);
+        Stage aboutStage = new AboutAppWindow();
         aboutStage.show();
     }
 
     @FXML
     public void onPreferences (ActionEvent event) {
-
+        Stage aboutStage = new PreferenceWindow();
+        aboutStage.show();
     }
 
     @FXML
