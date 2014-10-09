@@ -8,7 +8,7 @@
  *
  * Created by snvx on 14/10/07.
  */
-package org.paltree.palnote.view;
+package org.paltree.palnote.view.window;
 
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;

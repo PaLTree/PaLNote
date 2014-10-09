@@ -8,7 +8,7 @@
  *
  * Created by snvx on 14/10/01.
  */
-package org.paltree.palnote.view;
+package org.paltree.palnote.view.window;
 
 /**
  * MainWindowClass
