@@ -18,6 +18,9 @@ import javafx.stage.Modality;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
+import java.util.Calendar;
+import java.util.Properties;
+
 public class AboutAppWindow extends Stage {
 
     public AboutAppWindow() {
@@ -32,12 +35,21 @@ public class AboutAppWindow extends Stage {
         lab1.setStyle("-fx-font-size: 20pt;");
         vbox.getChildren().add(lab1);
 
-        Label lab3 = new Label("Copyright (c) 2014 PaLTree. All rights reserved.");
+        Label lab3 = new Label("Copyright (c) " + Calendar.getInstance().get(Calendar.YEAR) + " PaLTree. All rights reserved.");
         vbox.getChildren().add(lab3);
 
-        Label lab4 = new Label("running on Java "
-                + System.getProperty("java.version"));
+        Properties properties = System.getProperties();
+        String javaVersion = properties.getProperty("java.runtime.version", properties.getProperty("java.version", "unknown"));
+        String arch = properties.getProperty("os.arch", "");
+
+        String vmVersion = properties.getProperty("java.vm.name", "unknown");
+        String vmVendor = properties.getProperty("java.vendor", "unknown");
+
+        Label lab4 = new Label("JRE: " + javaVersion + " " + arch);
         vbox.getChildren().add(lab4);
+
+        Label lab5 = new Label("JVM: " + vmVersion + " " + vmVendor);
+        vbox.getChildren().add(lab5);
 
         Button but1 = new Button("Close");
         vbox.getChildren().add(but1);
