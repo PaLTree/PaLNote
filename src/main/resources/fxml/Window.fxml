@@ -13,12 +13,12 @@
         <menus>
             <Menu mnemonicParsing="false" text="PaLNote">
               <items>
-                  <MenuItem fx:id="about_app" onAction="#onAboutApp" mnemonicParsing="false" text="About PaLNote" />
-                <MenuItem fx:id="check_updates" onAction="#onCheckUpdate" mnemonicParsing="false" text="Check for Updates" />
+                  <MenuItem fx:id="about_app" mnemonicParsing="false" onAction="#onAboutApp" text="About PaLNote" />
+                <MenuItem fx:id="check_updates" disable="true" mnemonicParsing="false" onAction="#onCheckUpdate" text="Check for Updates" />
                   <SeparatorMenuItem mnemonicParsing="false" />
-                  <MenuItem fx:id="preferences" onAction="#onPreferences" mnemonicParsing="false" text="Preferences..." />
+                  <MenuItem fx:id="preferences" mnemonicParsing="false" onAction="#onPreferences" text="Preferences..." />
                   <SeparatorMenuItem mnemonicParsing="false" />
-                  <MenuItem fx:id="quit_application" onAction="#onQuitApplication" mnemonicParsing="false" text="QuitApplication" />
+                  <MenuItem fx:id="quit_application" mnemonicParsing="false" onAction="#onQuitApplication" text="QuitApplication" />
               </items>
             </Menu>
           <Menu mnemonicParsing="false" text="File">
@@ -38,15 +38,21 @@
           </Menu>
         </menus>
       </MenuBar>
-      <ToolBar prefHeight="23.0" prefWidth="725.0">
+      <ToolBar prefHeight="0.0" prefWidth="779.0">
         <items>
-          <Button mnemonicParsing="false" text="Button" />
+          <Button mnemonicParsing="false" text="run" />
             <MenuButton mnemonicParsing="false" text="MenuButton">
               <items>
                 <MenuItem mnemonicParsing="false" text="Action 1" />
                 <MenuItem mnemonicParsing="false" text="Action 2" />
+                  <CustomMenuItem mnemonicParsing="false" text="Unspecified Action">
+                    <content>
+                      <CheckBox text="Click Me" />
+                    </content>
+                  </CustomMenuItem>
               </items>
             </MenuButton>
+            <TextField />
         </items>
          <contextMenu>
             <ContextMenu>
@@ -60,7 +66,7 @@
          <children>
             <TabPane prefHeight="406.0" prefWidth="600.0" style="-fx-background-radius: 0;" tabClosingPolicy="UNAVAILABLE" HBox.hgrow="ALWAYS">
               <tabs>
-                <Tab text="sample.np">
+                <Tab text="sample.js">
                   <content>
                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="323.0" prefWidth="600.0">
                            <children>
@@ -71,7 +77,7 @@
                      <graphic>
                         <ImageView fitHeight="31.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../images/default-128.png" />
+                              <Image url="@../images/programming_language/js.png" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -86,15 +92,22 @@
                      <graphic>
                         <ImageView fitHeight="29.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../images/default-128.png" />
+                              <Image url="@../images/programming_language/cpp.png" />
                            </image>
                         </ImageView>
                      </graphic>
                 </Tab>
-                  <Tab text="+">
+                  <Tab>
                     <content>
                       <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
                     </content>
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/plus.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
                   </Tab>
               </tabs>
                <HBox.margin>
