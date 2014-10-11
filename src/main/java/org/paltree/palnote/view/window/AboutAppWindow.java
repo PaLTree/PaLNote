@@ -26,8 +26,6 @@ public class AboutAppWindow extends Stage {
     public AboutAppWindow() {
         initModality(Modality.APPLICATION_MODAL);
         initStyle(StageStyle.TRANSPARENT);
-        setTitle("About PaLNote");
-        setResizable(false);
 
         VBox vbox = new VBox();
 
