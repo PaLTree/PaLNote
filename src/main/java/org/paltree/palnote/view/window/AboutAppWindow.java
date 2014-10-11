@@ -10,8 +10,6 @@
  */
 package org.paltree.palnote.view.window;
 
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -43,12 +41,7 @@ public class AboutAppWindow extends Stage {
 
         Button but1 = new Button("Close");
         vbox.getChildren().add(but1);
-        but1.setOnAction(new EventHandler<ActionEvent>() {
-            @Override
-            public void handle(ActionEvent event) {
-                hide();
-            }
-        });
+        but1.setOnAction((event) -> hide());
 
         Scene scene = new Scene(vbox);
         setScene(scene);
