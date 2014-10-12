@@ -33,8 +33,8 @@ public class MainWindowController {
 
     @FXML
     public void onPreferences (ActionEvent event) {
-        Stage aboutStage = new PreferenceWindow();
-        aboutStage.show();
+        Stage preferenceWindow = new PreferenceWindow();
+        preferenceWindow.show();
     }
 
     @FXML
