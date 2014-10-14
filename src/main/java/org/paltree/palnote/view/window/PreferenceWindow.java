@@ -20,9 +20,8 @@ public class PreferenceWindow extends Stage {
 
     public PreferenceWindow () {
         initModality(Modality.APPLICATION_MODAL);
-        initStyle(StageStyle.UTILITY);
+        initStyle(StageStyle.DECORATED);
         setTitle("Preference");
-        setResizable(false);
         VBox vbox = new VBox();
         Scene scene = new Scene(vbox);
         setScene(scene);
