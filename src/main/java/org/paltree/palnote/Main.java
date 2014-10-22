@@ -8,7 +8,7 @@
  *
  * Created by snvx on 14/09/24.
  */
-package org.paltree.palnote.main;
+package org.paltree.palnote;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
