@@ -40,19 +40,51 @@
       </MenuBar>
       <ToolBar prefHeight="0.0" prefWidth="779.0">
         <items>
-          <Button mnemonicParsing="false" text="run" />
-            <MenuButton mnemonicParsing="false" text="MenuButton">
-              <items>
-                <MenuItem mnemonicParsing="false" text="Action 1" />
-                <MenuItem mnemonicParsing="false" text="Action 2" />
-                  <CustomMenuItem mnemonicParsing="false" text="Unspecified Action">
-                    <content>
-                      <CheckBox text="Click Me" />
-                    </content>
-                  </CustomMenuItem>
-              </items>
-            </MenuButton>
-            <TextField />
+          <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+             <image>
+                <Image url="@../images/256/save.png" />
+             </image>
+          </ImageView>
+          <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+             <image>
+                <Image url="@../images/256/undo.png" />
+             </image>
+          </ImageView>
+          <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+             <image>
+                <Image url="@../images/256/redo.png" />
+             </image>
+          </ImageView>
+          <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+             <image>
+                <Image url="@../images/256/puzzle.png" />
+             </image>
+          </ImageView>
+          <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+             <image>
+                <Image url="@../images/256/console.png" />
+             </image>
+          </ImageView>
+          <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+             <image>
+                <Image url="@../images/256/variable.png" />
+             </image>
+          </ImageView>
+          <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+             <image>
+                <Image url="@../images/256/settings.png" />
+             </image>
+          </ImageView>
+          <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+             <image>
+                <Image url="@../images/256/search.png" />
+             </image>
+          </ImageView>
+          <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+             <image>
+                <Image url="@../images/256/copy.png" />
+             </image>
+          </ImageView>
         </items>
          <contextMenu>
             <ContextMenu>
@@ -62,9 +94,10 @@
             </ContextMenu>
          </contextMenu>
       </ToolBar>
-      <HBox prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
-         <children>
-            <TabPane prefHeight="406.0" prefWidth="600.0" style="-fx-background-radius: 0;" tabClosingPolicy="UNAVAILABLE" HBox.hgrow="ALWAYS">
+      <SplitPane dividerPositions="0.29797979797979796" prefHeight="160.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+        <items>
+            <TreeView prefHeight="490.0" prefWidth="228.0" />
+            <TabPane prefHeight="406.0" prefWidth="600.0" style="-fx-background-radius: 0;" tabClosingPolicy="UNAVAILABLE">
               <tabs>
                 <Tab text="sample.js">
                   <content>
@@ -77,7 +110,7 @@
                      <graphic>
                         <ImageView fitHeight="31.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../images/programming_language/js.png" />
+                              <Image url="@../images/64/programming_language/js.png" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -92,7 +125,7 @@
                      <graphic>
                         <ImageView fitHeight="29.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../images/programming_language/cpp.png" />
+                              <Image url="@../images/64/programming_language/cpp-white.png" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -104,24 +137,14 @@
                      <graphic>
                         <ImageView fitHeight="25.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../images/plus.png" />
+                              <Image url="@../images/64/plus.png" />
                            </image>
                         </ImageView>
                      </graphic>
                   </Tab>
               </tabs>
-               <HBox.margin>
-                  <Insets />
-               </HBox.margin>
             </TabPane>
-         </children>
-      </HBox>
-      <AnchorPane id="footer" prefHeight="0.0" prefWidth="451.0">
-         <children>
-            <Label layoutX="406.0" text="UTF-8" AnchorPane.rightAnchor="3.0" />
-            <Label layoutX="395.0" text="|" AnchorPane.rightAnchor="46.0" />
-            <Label layoutX="370.0" text="1:1" AnchorPane.rightAnchor="51.0" />
-         </children>
-      </AnchorPane>
+        </items>
+      </SplitPane>
    </children>
 </VBox>

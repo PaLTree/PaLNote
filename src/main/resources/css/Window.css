@@ -56,10 +56,28 @@
     -fx-background-color: transparent;
 }
 
-#footer {
-    -fx-background-color: #555555;
-}
-
 .Label {
     -fx-text-fill: #ecf0f1;
+}
+
+.TreeView {
+    -fx-text-fill: #ecf0f1;
+    -fx-background-color: #555555;
+    -fx-background-radius: 0px;
+}
+
+.TreeView .scroll-pane {
+    -fx-background-color: transparent;
+}
+
+.TreeView .scroll-pane .viewport {
+    -fx-background-color: transparent;
+}
+
+.TreeView .scroll-pane .content {
+    -fx-background-color: transparent;
+}
+
+.ToolBar {
+    -fx-background-color: #555555;
 }
