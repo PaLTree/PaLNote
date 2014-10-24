@@ -17,8 +17,6 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
-
-
 /**
  * MainWindowClass
  */
@@ -49,18 +47,19 @@ public class MainWindow extends Stage {
         menuPaLNote.getItems().addAll(aboutApp, checkUpdate, preferences, quitApplication);
 
         Menu menuFile = new Menu("File");
-        MenuItem newFolder = new MenuItem("NewFolder");
-        MenuItem openFolder = new MenuItem("OpenFolder");
+        MenuItem newProject = new MenuItem("NewProject");
+        MenuItem openProject = new MenuItem("OpenProject");
         MenuItem newFile = new MenuItem("NewFile");
+        MenuItem closeWindow = new MenuItem("CloseWindow");
 
-        menuFile.getItems().addAll(newFolder, openFolder, newFile);
+        menuFile.getItems().addAll(newProject, openProject, newFile, closeWindow);
 
         Menu menuEdit = new Menu("Edit");
-
         Menu menuView = new Menu("View");
         Menu menuCode = new Menu("Code");
         menuBar.getMenus().addAll(menuPaLNote, menuFile, menuEdit, menuView, menuCode);
 
+        //タブ
         TabPane tabPane = new TabPane();
         Tab tab = new Tab();
         tab.setGraphic(new ImageView("@../images/programming_language/js.png"));
@@ -69,7 +68,7 @@ public class MainWindow extends Stage {
         tab.setContent(hBox);
         tabPane.getTabs().addAll(tab);
 
-        vBox.getChildren().addAll(tabPane);
+        vBox.getChildren().addAll(menuBar, tabPane);
 
     }
 }
