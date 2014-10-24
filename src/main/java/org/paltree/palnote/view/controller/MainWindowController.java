@@ -6,7 +6,7 @@
  * 　Released under the Apache v2 License.
  * 　https://github.com/PaLTree/PaLNote/blob/master/LICENSE
  *
- * Created by snvx on 14/10/05.
+ * Created by Ayana Tokikaze on 14/10/05.
  */
 package org.paltree.palnote.view.controller;
 
