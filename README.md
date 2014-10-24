@@ -35,4 +35,4 @@ PaLNoteは競技プログラミングに特化したIDEです
 Java7では動きません!!  
 
 ##License
-[__Apache v2 License__](../master/LICENSE) / Copyright (C) 2014 Ayana Tokikaze.
+[__Apache v2 License__](../master/LICENSE) / Copyright (C) 2014 PaLTree.
