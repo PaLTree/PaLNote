@@ -1,4 +1,4 @@
-/**
+/*
  * PaLNote
  * https://github.com/PaLTree/PaLNote
  *
