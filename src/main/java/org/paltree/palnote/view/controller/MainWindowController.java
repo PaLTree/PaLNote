@@ -13,6 +13,7 @@ package org.paltree.palnote.view.controller;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
 import javafx.scene.control.MenuItem;
 import javafx.stage.Stage;
 
@@ -24,6 +25,15 @@ public class MainWindowController {
     @FXML private MenuItem check_updates;
     @FXML private MenuItem preferences;
     @FXML private MenuItem quit_application;
+    @FXML private Button save;
+    @FXML private Button undo;
+    @FXML private Button redo;
+    @FXML private Button copy;
+    @FXML private Button console;
+    @FXML private Button plugins;
+    @FXML private Button settings;
+    @FXML private Button help;
+    @FXML private Button search;
 
     @FXML
     public void onAboutApp (ActionEvent event) {
@@ -45,5 +55,40 @@ public class MainWindowController {
     @FXML
     public void onQuitApplication (ActionEvent event) {
         Platform.exit();
+    }
+
+    @FXML
+    public void onSave (ActionEvent event) {
+
+    }
+
+    @FXML
+    public void onUndoButton (ActionEvent event) {
+
+    }
+
+    @FXML
+    public void onRedoButton (ActionEvent event) {
+
+    }
+
+    @FXML
+    public void onCopyButton (ActionEvent event) {
+
+    }
+
+    @FXML
+    public void onConsoleButton (ActionEvent event) {
+
+    }
+
+    @FXML
+    public void onHelpButton (ActionEvent event) {
+
+    }
+
+    @FXML
+    public void onSearchButton (ActionEvent event) {
+
     }
 }
