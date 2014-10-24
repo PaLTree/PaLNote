@@ -47,6 +47,9 @@
                    </image>
                 </ImageView>
                </graphic>
+               <tooltip>
+                  <Tooltip text="Save" />
+               </tooltip>
             </Button>
             <Button fx:id="undo" mnemonicParsing="false" prefHeight="35.0" prefWidth="40.0">
                <graphic>
@@ -56,6 +59,9 @@
                    </image>
                 </ImageView>
                </graphic>
+               <tooltip>
+                  <Tooltip text="Undo" />
+               </tooltip>
             </Button>
             <Button fx:id="redo" mnemonicParsing="false" prefHeight="35.0" prefWidth="40.0">
                <graphic>
@@ -65,6 +71,9 @@
                    </image>
                 </ImageView>
                </graphic>
+               <tooltip>
+                  <Tooltip text="Redo" />
+               </tooltip>
             </Button>
             <Button fx:id="copy" mnemonicParsing="false" prefHeight="35.0" prefWidth="40.0">
                <graphic>
@@ -74,6 +83,9 @@
                    </image>
                 </ImageView>
                </graphic>
+               <tooltip>
+                  <Tooltip text="Code Copy" />
+               </tooltip>
             </Button>
             <Button fx:id="console" disable="true" mnemonicParsing="false" prefHeight="35.0" prefWidth="40.0">
                <graphic>
@@ -83,6 +95,9 @@
                    </image>
                 </ImageView>
                </graphic>
+               <tooltip>
+                  <Tooltip text="Console" />
+               </tooltip>
             </Button>
             <Button fx:id="plugins" disable="true" mnemonicParsing="false" prefHeight="35.0" prefWidth="40.0">
                <graphic>
@@ -92,6 +107,9 @@
                    </image>
                 </ImageView>
                </graphic>
+               <tooltip>
+                  <Tooltip text="plugins" />
+               </tooltip>
             </Button>
             <Button fx:id="settings" mnemonicParsing="false" onAction="#onPreferences" prefHeight="35.0" prefWidth="40.0">
                <graphic>
@@ -101,6 +119,21 @@
                    </image>
                 </ImageView>
                </graphic>
+               <tooltip>
+                  <Tooltip text="Settings" />
+               </tooltip>
+            </Button>
+            <Button fx:id="bug_report" mnemonicParsing="false" prefHeight="35.0" prefWidth="40.0">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/basic/ic_bug_report_white_24dp.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <tooltip>
+                  <Tooltip text="Bug Report" />
+               </tooltip>
             </Button>
             <Button fx:id="help" disable="true" mnemonicParsing="false" prefHeight="35.0" prefWidth="40.0">
                <graphic>
@@ -110,6 +143,9 @@
                    </image>
                 </ImageView>
                </graphic>
+               <tooltip>
+                  <Tooltip text="Help" />
+               </tooltip>
             </Button>
             <Button fx:id="search" mnemonicParsing="false" prefHeight="35.0" prefWidth="40.0">
                 <graphic>
@@ -119,21 +155,27 @@
                    </image>
                 </ImageView>
                </graphic>
+               <tooltip>
+                  <Tooltip text="Search" />
+               </tooltip>
             </Button>
         </items>
       </ToolBar>
       <SplitPane dividerPositions="0.29797979797979796" prefHeight="160.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
         <items>
-            <TreeView prefHeight="469.0" prefWidth="159.0" styleClass="TreeView" />
-            <TabPane prefHeight="406.0" prefWidth="600.0" style="-fx-background-radius: 0;" tabClosingPolicy="UNAVAILABLE">
+            <TreeView fixedCellSize="0.0" prefHeight="469.0" prefWidth="159.0" styleClass="TreeView" />
+            <TabPane prefHeight="406.0" prefWidth="600.0" rotateGraphic="true" style="-fx-background-radius: 0;">
               <tabs>
                 <Tab text="sample.js">
                   <content>
-                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="323.0" prefWidth="600.0">
-                           <children>
-                              <TextArea layoutX="-137.0" layoutY="115.0" prefHeight="332.0" prefWidth="600.0" styleClass="TextArea" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
-                           </children>
-                        </AnchorPane>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="323.0" prefWidth="600.0">
+                          <children>
+                              <TextArea layoutX="27.0" layoutY="48.0" prefHeight="200.0" prefWidth="200.0" styleClass="TextArea" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <font>
+                                    <Font name="AdobeFanHeitiStd-Bold" size="13.0" />
+                                 </font></TextArea>
+                          </children>
+                      </AnchorPane>
                   </content>
                      <graphic>
                         <ImageView fitHeight="30.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
@@ -174,12 +216,12 @@
                         </ImageView>
                      </graphic>
                   </Tab>
-                  <Tab>
+                  <Tab closable="false">
                     <content>
                       <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
                     </content>
                      <graphic>
-                        <ImageView fitHeight="25.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="18.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../images/basic/ic_add_black_24dp.png" />
                            </image>

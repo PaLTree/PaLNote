@@ -32,6 +32,7 @@ public class MainWindowController {
     @FXML private Button console;
     @FXML private Button plugins;
     @FXML private Button settings;
+    @FXML private Button bug_report;
     @FXML private Button help;
     @FXML private Button search;
 
@@ -80,6 +81,11 @@ public class MainWindowController {
     @FXML
     public void onConsoleButton (ActionEvent event) {
 
+    }
+    
+    @FXML
+    public void onBugReport (ActionEvent event) {
+        
     }
 
     @FXML
